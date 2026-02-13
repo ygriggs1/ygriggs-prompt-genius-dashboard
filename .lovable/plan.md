@@ -2,7 +2,7 @@
 
 # LLM Chatbot Optimizer Dashboard
 
-A professional prompt engineering portfolio piece with real AI integration, interactive A/B testing, and polished metrics visualization. Built to demonstrate $300K+ engineering caliber.
+A professional prompt engineering portfolio piece with real AI integration, interactive A/B testing, and polished metrics visualization. Built to demonstrate $$$$$$$+ engineering caliber.
 
 ## Design System
 - **Color scheme**: Blue/indigo gradient (#4F46E5 → #6366F1) with clean whites and subtle grays
