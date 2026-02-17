@@ -1,63 +1,67 @@
-# Welcome to your Lovable project
+# Prompt Genius Dashboard
 
-## Project info
+A Vite + React dashboard for managing prompt experiments, Supabase-backed data, and UI workflows for the Prompt Genius experience.
 
-**URL**: [https://yurickg.lovable.app/)]
+**Live URL:** https://yurickg.lovable.app/
 
-**Use Lovable**
+## Features
+- Prompt experiment dashboard with React Query data fetching
+- Supabase integration for storage and auth-ready workflows
+- Component-driven UI built with shadcn/ui and Tailwind CSS
+- Vite-powered development and optimized builds
 
+## Tech Stack
+- Vite
+- React + TypeScript
+- Tailwind CSS + shadcn/ui
+- Supabase
+- TanStack React Query
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
+- Node.js 18+
+- npm (or a compatible package manager)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+### Install
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+npm install
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Configure Environment
+Copy the example file and update values:
+```sh
+cp .env.example .env
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+Required variables:
+- `VITE_SUPABASE_PROJECT_ID`
+- `VITE_SUPABASE_PUBLISHABLE_KEY`
+- `VITE_SUPABASE_URL`
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Run Locally
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Scripts
+- `npm run dev` — start the dev server
+- `npm run build` — production build
+- `npm run preview` — preview production build
+- `npm run lint` — lint the codebase
+- `npm run test` — run tests
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
+- `src/pages` — route-level pages
+- `src/components` — shared UI components
+- `src/hooks` — reusable hooks
+- `src/integrations` — external service integrations
+- `src/lib` — shared utilities
 
-**Use GitHub Codespaces**
+## Deployment
+```sh
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Notes
+- Do not commit real secrets. Keep `.env` local and use `.env.example` for placeholders.
