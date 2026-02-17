@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: [https://yurickg.lovable.app/)]
+**URL**: [https://ygriggs.lovable.app/](https://ygriggs.lovable.app/)
 
 **Use Lovable**
 
