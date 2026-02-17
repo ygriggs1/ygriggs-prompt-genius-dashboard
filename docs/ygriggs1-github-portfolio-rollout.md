@@ -67,7 +67,7 @@ Create these as public repos and include README + MIT License:
 Run these checks in each repository root before publishing:
 
 ```bash
-rg -n "legacy-name-1|legacy-name-2|legacy-handle"
+rg -n "Patxi|patxilanoix|Patxilanoix|@Patxilanoix"
 rg -n "OPENAI_API_KEY\s*=\s*['\"]"
 ```
 
