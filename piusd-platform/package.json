@@ -1,0 +1,21 @@
+{
+  "name": "piusd-platform",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/backend",
+    "apps/frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace @piusd/backend\" \"npm run dev --workspace @piusd/frontend\"",
+    "build": "npm run build --workspace @piusd/backend && npm run build --workspace @piusd/frontend",
+    "lint": "npm run lint --workspace @piusd/backend && npm run lint --workspace @piusd/frontend",
+    "test": "npm run test --workspace @piusd/backend && npm run test --workspace @piusd/frontend",
+    "prisma:generate": "prisma generate --schema prisma/schema.prisma",
+    "prisma:migrate": "prisma migrate deploy --schema prisma/schema.prisma"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "prisma": "^5.22.0"
+  }
+}
