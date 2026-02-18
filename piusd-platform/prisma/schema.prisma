@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model SwapHistory {
+  id          String   @id @default(cuid())
+  wallet      String
+  txSignature String   @unique
+  inputMint   String
+  outputMint  String
+  amountIn    Float
+  amountOut   Float
+  slippageBps Int
+  status      String
+  createdAt   DateTime @default(now())
+
+  @@index([wallet, createdAt])
+}
